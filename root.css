@@ -12,3 +12,8 @@
     --gris: #9BA4B4;
     --gris-blanco: #F1F6F9;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+}
