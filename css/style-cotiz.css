@@ -89,3 +89,7 @@ fieldset:last-of-type input {
   cursor: pointer;
   box-shadow: rgba(255, 0, 0, 1);
 }
+
+.factura {
+  opacity: 0;
+}
