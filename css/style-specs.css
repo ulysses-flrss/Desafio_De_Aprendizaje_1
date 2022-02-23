@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--gris-blanco);
+}
+
+#title {
+    font-family: var(--fuente-titulo);
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-family: var(--fuente-subtitulo);
+    font-weight: 500;
+}
