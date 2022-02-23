@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(56, 56, 56, 0.315), rgba(56, 56, 56, 0.315)),
+    url("/css/img/PS5\ fondo4.jpg"), var(--gris-blanco) no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: var(--fuente-texto);
+  font-size: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+/*form {
+  margin: 1.5rem auto;
+}*/
+
+header,
+.formulario,
+footer {
+  color: black;
+  font-weight: bold;
+}
+
+.formulario {
+  transition: all 0.5s ease-in-out;
+  width: 48rem;
+  height: 35rem;
+  padding: 1.5rem 2rem;
+  margin: 10rem auto;
+  /*border: outset var(--azul-oscro) 1rem;*/
+  border-radius: 1em;
+  align-items: center;
+}
+
+#tituloForm {
+  font-family: var(--fuente-subtitulo);
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.opcForm {
+  width: 100%;
+  margin: 2.5rem auto;
+  padding: 1rem;
+  border: none;
+  font-size: 2rem;
+  font-family: var(--fuente-subtitulo);
+}
+
+#primerCampo {
+  margin-top: 6rem;
+}
+
+input {
+  font-size: var(--funete-texto);
+  margin-top: 1.8rem;
+  width: 68.5%;
+  height: 2.5rem;
+  border: inset 0.3rem var(--azul-gris);
+  border-radius: 1em;
+}
+
+fieldset:last-of-type input {
+  margin-top: 1rem;
+  margin-left: 0.7rem;
+}
+
+#cantidad {
+  width: 20%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.comprar {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 1);
+}
+
+#enviar {
+  background: var(--azul-gris);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border: outset white 0.2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  box-shadow: rgba(255, 0, 0, 1);
+}
