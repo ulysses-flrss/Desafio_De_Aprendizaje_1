@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playdom - Cotización PS5</title>
+  <link rel="stylesheet" href="/css/style-cotiz.css">
+  <link rel="stylesheet" href="/css/root.css">
+</head>
+
+<body>
+  <main class="principal">
+    <header>
+      <div class="menu"></div>
+    </header>
+    <div class="formulario">
+      <form action="" method="POST" id="formCotiz">
+        <h1 id="tituloForm">Datos Para Comprar Una PS5</h1>
+        <fieldset class="opcForm" id="primerCampo">
+          <label for="name">Nombre Completo:</label>
+          <input type="text" name="name" id="name">
+        </fieldset>
+
+        <fieldset class="opcForm">
+          <label for="correo">Correo Electrónico:</label>
+          <input type="email" name="correo" id="correo">
+        </fieldset>
+
+        <fieldset class="opcForm">
+          <label for="cantidad">Cantidad a Comprar:</label>
+          <input type="number" name="cantidad" id="cantidad" min="0" max="10">
+        </fieldset>
+        <div class="comprar">
+          <button type="submit" id="enviar" name="enviar">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="factura">
+      <div class="facturaOpc">
+        <h2 class="titleFact" id="title1"></h2>
+        <p class="leyenda" id="ley1"></p>
+      </div>
+      <div class="facturaOpc">
+        <h2 class="titleFact" id="title2"></h2>
+        <p class="leyenda" id="ley2"></p>
+      </div>
+      <div class="facturaOpc">
+        <h2 class="titleFact" id="title3"></h2>
+        <p class="leyenda" id="ley3"></p>
+      </div>
+      <div class="facturOpc"><button type="submit" name="comprar">Comprar</button></div>
+    </div>
+  </main>
+  <script src="/js/facutra.js"></script>
+</body>
+
+</html>
