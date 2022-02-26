@@ -7,68 +7,94 @@
     <title>Playdom</title>
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/principal.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+
+posicionarMenu();
+
+$(window).scroll(function() {    
+    posicionarMenu();
+});
+
+function posicionarMenu() {
+    var altura_del_header = $('.header').outerHeight(true);
+    var altura_del_menu = $('.menu').outerHeight(true);
+
+    if ($(window).scrollTop() >= altura_del_header){
+        $('.menu').addClass('fixed');
+        $('.wrapper').css('margin-top', (altura_del_menu) + 'px');
+    } else {
+        $('.menu').removeClass('fixed');
+        $('.wrapper').css('margin-top', '0');
+    }
+}
+
+</script>
 
 
 </head>
 <body>
-    <header>
+    <div class="header">
         <section id="title">
             <h1 ><center>Playdom</center></h1>
         </section>
-        <svg xmlns="http://www.w3.org/2000/svg"  hidden>
-            <symbol id="arrow" viewbox="0 0 16 16" >
-                <polyline points="4 6, 8 10, 12 6" stroke="#000" stroke-width="2" fill="transparent" stroke-linecap="round" />
-            </symbol>
-        </svg>
+
+    </div>
+   
+       
+        
+        <div class="menu">
+            <nav id="site-navigation" class="site-navigation" aria-label="Clickable Menu Demonstration">
+                <ul  class="main-menu clicky-menu no-js">
+                    <li >
+                        <a href="#">inicio
+                            
+                        </a>
+                    </li>
+                    <li>
+                       <a href="#">juegos</a> 
+                    </li>
+                    <li>
+                        <a href="#">Especificaciones Tecnicas
+                            <svg aria-hidden="true" width="16" height="16" >
+                                <use xlink:href="#arrow" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Cotización
+                            <svg aria-hidden="true" width="16" height="16">
+                                <use xlink:href="#arrow" />
+                            </svg>
+                        </a>
+                        <ul>
+                            <li><a href="#">x</a></li>
+                            <li><a href="#">x</a></li>
+                            <li><a href="#">x</a></li>
+                            <li><a href="#">x</a></li>
+                            <li><a href="#">x</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Comparación
+                            <svg aria-hidden="true" width="16" height="16">
+                                <use xlink:href="#arrow" />
+                            </svg>
+                        </a>
+                    </li>
+                    
+        
+                </ul>
+        
+            </nav>
+        </div>
+       
     
-        <nav id="site-navigation" class="site-navigation" aria-label="Clickable Menu Demonstration">
-            <ul  class="main-menu clicky-menu no-js">
-                <li >
-                    <a href="#">inicio
-                        
-                    </a>
-                </li>
-                <li>
-                   <a href="#">juegos</a> 
-                </li>
-                <li>
-                    <a href="#">Especificaciones Tecnicas
-                        <svg aria-hidden="true" width="16" height="16">
-                            <use xlink:href="#arrow" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Cotización
-                        <svg aria-hidden="true" width="16" height="16">
-                            <use xlink:href="#arrow" />
-                        </svg>
-                    </a>
-                    <ul>
-                        <li><a href="#">x</a></li>
-                        <li><a href="#">x</a></li>
-                        <li><a href="#">x</a></li>
-                        <li><a href="#">x</a></li>
-                        <li><a href="#">x</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Comparación
-                        <svg aria-hidden="true" width="16" height="16">
-                            <use xlink:href="#arrow" />
-                        </svg>
-                    </a>
-                </li>
-                
     
-            </ul>
-    
-        </nav>
-    </header>
-    
-    <br><br><br><br>
     <section >
-        <p>Los saltos de línea también son caracteres de espacio en blanco. Obsérvese que si bien la [ISO10646] define &#x2028; y &#x2029; como separaciones inequívocas de líneas y párrafos respectivamente, estos caracteres no constituyen saltos de línea en HTML, y esta especificación no los incluye en la categoría general de caracteres de espacio en blanco.
+        <p id="info">Los saltos de línea también son caracteres de espacio en blanco. Obsérvese que si bien la [ISO10646] define &#x2028; y &#x2029; como separaciones inequívocas de líneas y párrafos respectivamente, estos caracteres no constituyen saltos de línea en HTML, y esta especificación no los incluye en la categoría general de caracteres de espacio en blanco.
 
             Esta especificación no indica el comportamiento, en cuanto a su representación o a otros respectos, de otros caracteres de espacio que no sean los aquí identificados explícitamente como caracteres de espacio en blanco. Por esta razón, los autores deberían utilizar los elementos y estilos apropiados, y no caracteres de espacio, para lograr efectos de formato visual relacionados con el espacio en blanco.
             
