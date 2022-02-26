@@ -27,10 +27,9 @@
     left: auto !important;
     right: 0 !important;
 }
-header{
-    
-    margin-top: 0px;
-}
+
+
+
 
 
 body{
@@ -48,20 +47,10 @@ body{
    
     
 }
-svg [hidden]{
-    display: none;
-    position: absolute;
-
-}
 
 
 
-svg[hidden] {
-	display: none;
-	position: absolute;
-}
-
- section .site-navigation {
+ section.site-navigation {
 	width: 86%;
 	max-width: 782px;
 	box-shadow: 2px 2px 4px rgba(0,0,0,.2);
@@ -77,11 +66,12 @@ p{
     font-size: 2rem;
 }
 
- section .clicky-menu {
+header section .clicky-menu {
 	justify-content: stretch;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	position: fixed;
 	
 	
 }
@@ -91,13 +81,13 @@ p{
 	}
 }
 
-/* General Link & Button Styles */
+
 .clicky-menu a,
 .clicky-menu button {
 	margin: .25em;
-	padding: 1em;
+	padding: 2em;
 	background: transparent;
-	color: #000;
+	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
 	font-family: var(--fuente-titulo);
@@ -108,7 +98,7 @@ p{
 
 .clicky-menu a:hover,
 .clicky-menu button:hover {
-	background: #fff;
+	background: #000;
 }
 
 .clicky-menu a:focus,
@@ -117,13 +107,15 @@ p{
 	outline-offset: -.125em;
 }
 
-/* Top Level Items */
+
 .clicky-menu > li {
 	position: relative;
 	flex: 1 1 auto;
 	display: flex;
 	justify-content: stretch;
 	flex-wrap: wrap;
+	color: #eee;
+	font-size: 1.2rem;
 }
 
 .clicky-menu > li > a,
@@ -144,26 +136,21 @@ p{
 	}	
 }
 
-/* Icon */
-.clicky-menu svg {
-	width: 1em;
-	height: 1em;
-	margin-left: .5em;
-}
+
 
 .clicky-menu [aria-expanded="true"] svg {
 	transform: scaleY(-1);
 }
 
-/* Submenu Styles */
 .clicky-menu ul {
 	min-width: 100%;
 	width: 12em;
 	margin-top: .25em;
 	padding: 0;
 	list-style: none;
-	background-color: #eee;
+	background-color:var(--azul-gris);
 	border-radius: 3px;
+	position:auto;
 }
 @media (min-width: 540px) {
 	.clicky-menu {
@@ -171,7 +158,7 @@ p{
 	}
 }
 
-/* Responsive Submenu Behavior */
+
 .clicky-menu ul[aria-hidden="false"] {
 	position: static;
 	width: 100%;
@@ -185,7 +172,7 @@ p{
 	}
 }
 
-/* Submenu Links */
+
 .clicky-menu ul a {
 	display: block;
 	padding-top: .375em;
@@ -197,3 +184,12 @@ p{
 		white-space: nowrap;
 	}
 }
+
+  #info{
+	margin-top: 200px;
+}
+
+.header{ border-top:1px solid white;background:white; color:#333; height:150px; width:100%; font-family: 'Lobster', cursive; text-align:center}
+.menu{ width:100%; background-color: var(--azul-oscuro); color:white; text-align:center}
+.wrapper{ height:2000px; width:100%; padding:20px}
+.fixed{position:fixed; top:0}
