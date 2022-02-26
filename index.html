@@ -11,21 +11,144 @@
 
 </head>
 <body>
-    <h1 id="title">Playdom</h1>
-    <nav>
-        <ul  class="menu">
-            <li >inicio</li>
-            <li>juegos</li>
-            <li>Especificaciones Tecnicas</li>
-            <li>Cotización</li>
-            <li>Comparación</li>
-            
-
-        </ul>
-
-    </nav>
-       
+    <header>
+        <section id="title">
+            <h1 >Playdom</h1>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg"  hidden>
+            <symbol id="arrow" viewbox="0 0 16 16" >
+                <polyline points="4 6, 8 10, 12 6" stroke="#000" stroke-width="2" fill="transparent" stroke-linecap="round" />
+            </symbol>
+        </svg>
     
+        <nav id="site-navigation" class="site-navigation" aria-label="Clickable Menu Demonstration">
+            <ul  class="main-menu clicky-menu no-js">
+                <li >
+                    <a href="#">inicio
+                        
+                    </a>
+                </li>
+                <li>
+                   <a href="#">juegos</a> 
+                </li>
+                <li>
+                    <a href="#">Especificaciones Tecnicas
+                        <svg aria-hidden="true" width="16" height="16">
+                            <use xlink:href="#arrow" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Cotización
+                        <svg aria-hidden="true" width="16" height="16">
+                            <use xlink:href="#arrow" />
+                        </svg>
+                    </a>
+                    <ul>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Content Strategy</a></li>
+                        <li><a href="#">Training</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Comparación
+                        <svg aria-hidden="true" width="16" height="16">
+                            <use xlink:href="#arrow" />
+                        </svg>
+                    </a>
+                </li>
+                
+    
+            </ul>
+    
+        </nav>
+    </header>
+    
+    <br><br><br><br>
+    <section >
+        <p>Los saltos de línea también son caracteres de espacio en blanco. Obsérvese que si bien la [ISO10646] define &#x2028; y &#x2029; como separaciones inequívocas de líneas y párrafos respectivamente, estos caracteres no constituyen saltos de línea en HTML, y esta especificación no los incluye en la categoría general de caracteres de espacio en blanco.
+
+            Esta especificación no indica el comportamiento, en cuanto a su representación o a otros respectos, de otros caracteres de espacio que no sean los aquí identificados explícitamente como caracteres de espacio en blanco. Por esta razón, los autores deberían utilizar los elementos y estilos apropiados, y no caracteres de espacio, para lograr efectos de formato visual relacionados con el espacio en blanco.
+            
+            Para todos los elementos HTML, excepto para el elemento PRE, las secuencias de espacio en blanco separan "palabras" (con el término "palabra" queremos decir "secuencias de caracteres que no son de espacio en blanco"). Los agentes de usuario, al dar formato al texto, deberían identificar estas palabras y mostrarlas de acuerdo con las convenciones del idioma escrito y del medio destino.
+            
+            Esta presentación puede implicar la colocación de espacio entre palabras, pero las convenciones relativas al espacio varían de un idioma a otr. Por ejemplo, en escritura latina, el espacio entre palabras se suele representar mediante un espacio ASCII (&#x0020;), mientras que en tailandés se usa un separador de palabras de anchura cero (&#x200B;). En japonés y en chino el espacio entre palabras normalmente no se representa de ninguna manera.
+            
+            Obsérvese que una secuencia de espacios en blanco entre palabras en el documento fuente puede ser representada como un espacio entre palabras completamente diferente (excepto en el caso del elemento PRE). En particular, los agentes de usuario deberían colapsar las secuencias de espacios en blanco de la entrada al producir la salida del espacio entre palabras. Esto puede y debería hacerse incluso en ausencia de información sobre el idioma (proveniente del atributo lang, el campo de encabezado HTTP "Content-Language" (ver [RFC2616], sección 14.12), la configuración del agente de usuario, etc.).
+            
+            El elemento PRE se utiliza para texto preformateado, en el cual el espacio en blanco es significativo.
+            
+            Para evitar problemas con las reglas de saltos de línea de SGML e inconsistencias entre las implementaciones existentes, los autores no deberían suponer que los agentes de usuario representarán el espacio en blanco que esté inmediatamente después de una etiqueta inicial o inmediatamente antes de una etiqueta final. Así, los autores, y en particular las herramientas de creación, deberían escribir:</p>
+            <p>Los saltos de línea también son caracteres de espacio en blanco. Obsérvese que si bien la [ISO10646] define &#x2028; y &#x2029; como separaciones inequívocas de líneas y párrafos respectivamente, estos caracteres no constituyen saltos de línea en HTML, y esta especificación no los incluye en la categoría general de caracteres de espacio en blanco.
+    
+                Esta especificación no indica el comportamiento, en cuanto a su representación o a otros respectos, de otros caracteres de espacio que no sean los aquí identificados explícitamente como caracteres de espacio en blanco. Por esta razón, los autores deberían utilizar los elementos y estilos apropiados, y no caracteres de espacio, para lograr efectos de formato visual relacionados con el espacio en blanco.
+                
+                Para todos los elementos HTML, excepto para el elemento PRE, las secuencias de espacio en blanco separan "palabras" (con el término "palabra" queremos decir "secuencias de caracteres que no son de espacio en blanco"). Los agentes de usuario, al dar formato al texto, deberían identificar estas palabras y mostrarlas de acuerdo con las convenciones del idioma escrito y del medio destino.
+                
+                Esta presentación puede implicar la colocación de espacio entre palabras, pero las convenciones relativas al espacio varían de un idioma a otr. Por ejemplo, en escritura latina, el espacio entre palabras se suele representar mediante un espacio ASCII (&#x0020;), mientras que en tailandés se usa un separador de palabras de anchura cero (&#x200B;). En japonés y en chino el espacio entre palabras normalmente no se representa de ninguna manera.
+                
+                Obsérvese que una secuencia de espacios en blanco entre palabras en el documento fuente puede ser representada como un espacio entre palabras completamente diferente (excepto en el caso del elemento PRE). En particular, los agentes de usuario deberían colapsar las secuencias de espacios en blanco de la entrada al producir la salida del espacio entre palabras. Esto puede y debería hacerse incluso en ausencia de información sobre el idioma (proveniente del atributo lang, el campo de encabezado HTTP "Content-Language" (ver [RFC2616], sección 14.12), la configuración del agente de usuario, etc.).
+                
+                El elemento PRE se utiliza para texto preformateado, en el cual el espacio en blanco es significativo.
+                
+                Para evitar problemas con las reglas de saltos de línea de SGML e inconsistencias entre las implementaciones existentes, los autores no deberían suponer que los agentes de usuario representarán el espacio en blanco que esté inmediatamente después de una etiqueta inicial o inmediatamente antes de una etiqueta final. Así, los autores, y en particular las herramientas de creación, deberían escribir:</p>
+                <p>Los saltos de línea también son caracteres de espacio en blanco. Obsérvese que si bien la [ISO10646] define &#x2028; y &#x2029; como separaciones inequívocas de líneas y párrafos respectivamente, estos caracteres no constituyen saltos de línea en HTML, y esta especificación no los incluye en la categoría general de caracteres de espacio en blanco.
+    
+                    Esta especificación no indica el comportamiento, en cuanto a su representación o a otros respectos, de otros caracteres de espacio que no sean los aquí identificados explícitamente como caracteres de espacio en blanco. Por esta razón, los autores deberían utilizar los elementos y estilos apropiados, y no caracteres de espacio, para lograr efectos de formato visual relacionados con el espacio en blanco.
+                    
+                    Para todos los elementos HTML, excepto para el elemento PRE, las secuencias de espacio en blanco separan "palabras" (con el término "palabra" queremos decir "secuencias de caracteres que no son de espacio en blanco"). Los agentes de usuario, al dar formato al texto, deberían identificar estas palabras y mostrarlas de acuerdo con las convenciones del idioma escrito y del medio destino.
+                    
+                    Esta presentación puede implicar la colocación de espacio entre palabras, pero las convenciones relativas al espacio varían de un idioma a otr. Por ejemplo, en escritura latina, el espacio entre palabras se suele representar mediante un espacio ASCII (&#x0020;), mientras que en tailandés se usa un separador de palabras de anchura cero (&#x200B;). En japonés y en chino el espacio entre palabras normalmente no se representa de ninguna manera.
+                    
+                    Obsérvese que una secuencia de espacios en blanco entre palabras en el documento fuente puede ser representada como un espacio entre palabras completamente diferente (excepto en el caso del elemento PRE). En particular, los agentes de usuario deberían colapsar las secuencias de espacios en blanco de la entrada al producir la salida del espacio entre palabras. Esto puede y debería hacerse incluso en ausencia de información sobre el idioma (proveniente del atributo lang, el campo de encabezado HTTP "Content-Language" (ver [RFC2616], sección 14.12), la configuración del agente de usuario, etc.).
+                    
+                    El elemento PRE se utiliza para texto preformateado, en el cual el espacio en blanco es significativo.
+                    
+                    Para evitar problemas con las reglas de saltos de línea de SGML e inconsistencias entre las implementaciones existentes, los autores no deberían suponer que los agentes de usuario representarán el espacio en blanco que esté inmediatamente después de una etiqueta inicial o inmediatamente antes de una etiqueta final. Así, los autores, y en particular las herramientas de creación, deberían escribir:</p>
+                    <p>Los saltos de línea también son caracteres de espacio en blanco. Obsérvese que si bien la [ISO10646] define &#x2028; y &#x2029; como separaciones inequívocas de líneas y párrafos respectivamente, estos caracteres no constituyen saltos de línea en HTML, y esta especificación no los incluye en la categoría general de caracteres de espacio en blanco.
+
+                        Esta especificación no indica el comportamiento, en cuanto a su representación o a otros respectos, de otros caracteres de espacio que no sean los aquí identificados explícitamente como caracteres de espacio en blanco. Por esta razón, los autores deberían utilizar los elementos y estilos apropiados, y no caracteres de espacio, para lograr efectos de formato visual relacionados con el espacio en blanco.
+                        
+                        Para todos los elementos HTML, excepto para el elemento PRE, las secuencias de espacio en blanco separan "palabras" (con el término "palabra" queremos decir "secuencias de caracteres que no son de espacio en blanco"). Los agentes de usuario, al dar formato al texto, deberían identificar estas palabras y mostrarlas de acuerdo con las convenciones del idioma escrito y del medio destino.
+                        
+                        Esta presentación puede implicar la colocación de espacio entre palabras, pero las convenciones relativas al espacio varían de un idioma a otr. Por ejemplo, en escritura latina, el espacio entre palabras se suele representar mediante un espacio ASCII (&#x0020;), mientras que en tailandés se usa un separador de palabras de anchura cero (&#x200B;). En japonés y en chino el espacio entre palabras normalmente no se representa de ninguna manera.
+                        
+                        Obsérvese que una secuencia de espacios en blanco entre palabras en el documento fuente puede ser representada como un espacio entre palabras completamente diferente (excepto en el caso del elemento PRE). En particular, los agentes de usuario deberían colapsar las secuencias de espacios en blanco de la entrada al producir la salida del espacio entre palabras. Esto puede y debería hacerse incluso en ausencia de información sobre el idioma (proveniente del atributo lang, el campo de encabezado HTTP "Content-Language" (ver [RFC2616], sección 14.12), la configuración del agente de usuario, etc.).
+                        
+                        El elemento PRE se utiliza para texto preformateado, en el cual el espacio en blanco es significativo.
+                        
+                        Para evitar problemas con las reglas de saltos de línea de SGML e inconsistencias entre las implementaciones existentes, los autores no deberían suponer que los agentes de usuario representarán el espacio en blanco que esté inmediatamente después de una etiqueta inicial o inmediatamente antes de una etiqueta final. Así, los autores, y en particular las herramientas de creación, deberían escribir:</p>
+                        <p>Los saltos de línea también son caracteres de espacio en blanco. Obsérvese que si bien la [ISO10646] define &#x2028; y &#x2029; como separaciones inequívocas de líneas y párrafos respectivamente, estos caracteres no constituyen saltos de línea en HTML, y esta especificación no los incluye en la categoría general de caracteres de espacio en blanco.
+                
+                            Esta especificación no indica el comportamiento, en cuanto a su representación o a otros respectos, de otros caracteres de espacio que no sean los aquí identificados explícitamente como caracteres de espacio en blanco. Por esta razón, los autores deberían utilizar los elementos y estilos apropiados, y no caracteres de espacio, para lograr efectos de formato visual relacionados con el espacio en blanco.
+                            
+                            Para todos los elementos HTML, excepto para el elemento PRE, las secuencias de espacio en blanco separan "palabras" (con el término "palabra" queremos decir "secuencias de caracteres que no son de espacio en blanco"). Los agentes de usuario, al dar formato al texto, deberían identificar estas palabras y mostrarlas de acuerdo con las convenciones del idioma escrito y del medio destino.
+                            
+                            Esta presentación puede implicar la colocación de espacio entre palabras, pero las convenciones relativas al espacio varían de un idioma a otr. Por ejemplo, en escritura latina, el espacio entre palabras se suele representar mediante un espacio ASCII (&#x0020;), mientras que en tailandés se usa un separador de palabras de anchura cero (&#x200B;). En japonés y en chino el espacio entre palabras normalmente no se representa de ninguna manera.
+                            
+                            Obsérvese que una secuencia de espacios en blanco entre palabras en el documento fuente puede ser representada como un espacio entre palabras completamente diferente (excepto en el caso del elemento PRE). En particular, los agentes de usuario deberían colapsar las secuencias de espacios en blanco de la entrada al producir la salida del espacio entre palabras. Esto puede y debería hacerse incluso en ausencia de información sobre el idioma (proveniente del atributo lang, el campo de encabezado HTTP "Content-Language" (ver [RFC2616], sección 14.12), la configuración del agente de usuario, etc.).
+                            
+                            El elemento PRE se utiliza para texto preformateado, en el cual el espacio en blanco es significativo.
+                            
+                            Para evitar problemas con las reglas de saltos de línea de SGML e inconsistencias entre las implementaciones existentes, los autores no deberían suponer que los agentes de usuario representarán el espacio en blanco que esté inmediatamente después de una etiqueta inicial o inmediatamente antes de una etiqueta final. Así, los autores, y en particular las herramientas de creación, deberían escribir:</p>
+                            <p>Los saltos de línea también son caracteres de espacio en blanco. Obsérvese que si bien la [ISO10646] define &#x2028; y &#x2029; como separaciones inequívocas de líneas y párrafos respectivamente, estos caracteres no constituyen saltos de línea en HTML, y esta especificación no los incluye en la categoría general de caracteres de espacio en blanco.
+                
+                                Esta especificación no indica el comportamiento, en cuanto a su representación o a otros respectos, de otros caracteres de espacio que no sean los aquí identificados explícitamente como caracteres de espacio en blanco. Por esta razón, los autores deberían utilizar los elementos y estilos apropiados, y no caracteres de espacio, para lograr efectos de formato visual relacionados con el espacio en blanco.
+                                
+                                Para todos los elementos HTML, excepto para el elemento PRE, las secuencias de espacio en blanco separan "palabras" (con el término "palabra" queremos decir "secuencias de caracteres que no son de espacio en blanco"). Los agentes de usuario, al dar formato al texto, deberían identificar estas palabras y mostrarlas de acuerdo con las convenciones del idioma escrito y del medio destino.
+                                
+                                Esta presentación puede implicar la colocación de espacio entre palabras, pero las convenciones relativas al espacio varían de un idioma a otr. Por ejemplo, en escritura latina, el espacio entre palabras se suele representar mediante un espacio ASCII (&#x0020;), mientras que en tailandés se usa un separador de palabras de anchura cero (&#x200B;). En japonés y en chino el espacio entre palabras normalmente no se representa de ninguna manera.
+                                
+                                Obsérvese que una secuencia de espacios en blanco entre palabras en el documento fuente puede ser representada como un espacio entre palabras completamente diferente (excepto en el caso del elemento PRE). En particular, los agentes de usuario deberían colapsar las secuencias de espacios en blanco de la entrada al producir la salida del espacio entre palabras. Esto puede y debería hacerse incluso en ausencia de información sobre el idioma (proveniente del atributo lang, el campo de encabezado HTTP "Content-Language" (ver [RFC2616], sección 14.12), la configuración del agente de usuario, etc.).
+                                
+                                El elemento PRE se utiliza para texto preformateado, en el cual el espacio en blanco es significativo.
+                                
+                                Para evitar problemas con las reglas de saltos de línea de SGML e inconsistencias entre las implementaciones existentes, los autores no deberían suponer que los agentes de usuario representarán el espacio en blanco que esté inmediatamente después de una etiqueta inicial o inmediatamente antes de una etiqueta final. Así, los autores, y en particular las herramientas de creación, deberían escribir:</p>
+
+    </section>
+   
     
     
 </body>
