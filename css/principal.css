@@ -28,9 +28,8 @@
     right: 0 !important;
 }
 header{
-    background-color:var(--gris);
     
-    width: 100rem;
+    margin-top: 0px;
 }
 
 
@@ -62,7 +61,7 @@ svg[hidden] {
 	position: absolute;
 }
 
-header section .site-navigation {
+ section .site-navigation {
 	width: 86%;
 	max-width: 782px;
 	box-shadow: 2px 2px 4px rgba(0,0,0,.2);
@@ -71,16 +70,20 @@ header section .site-navigation {
     position: fixed;
     margin-left: 30rem;
     margin-top: -65px;
+	
+	
 }
 p{
     font-size: 2rem;
 }
 
-header section .clicky-menu {
+ section .clicky-menu {
 	justify-content: stretch;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	
+	
 }
 @media (min-width: 540px) {
 	.clicky-menu {
@@ -97,8 +100,10 @@ header section .clicky-menu {
 	color: #000;
 	font-weight: bold;
 	text-decoration: none;
-	font-family: inherit;
+	font-family: var(--fuente-titulo);
 	border-radius: 3px;
+	font-size: 2rem;
+	
 }
 
 .clicky-menu a:hover,
@@ -108,7 +113,7 @@ header section .clicky-menu {
 
 .clicky-menu a:focus,
 .clicky-menu button:focus {
-	outline: .125em dotted purple;
+	outline: .125em dotted var(--azul-oscuro);
 	outline-offset: -.125em;
 }
 
