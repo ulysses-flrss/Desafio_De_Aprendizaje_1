@@ -58,7 +58,6 @@ button {
 
 #right:hover, #left:hover {
     transition: 300ms all;
-    /* transform: scale(1.05); */
     box-shadow: 0px 4px 0px var(--azul-oscuro);
     transform: translateY(1px);
 }
@@ -70,25 +69,11 @@ button {
     /* transform: scale(0.95); */
 }
 
-/* #right:hover, #left:hover {
-    transition: 400ms all;
-    transform: scale(1.5);   
-}
-
-#right:active, #left:active {
-    transition: 400ms all;
-    transform: scale(1.2);
-    text-shadow: 0px 0px 0px ;
-} */
-
-
-
-
 .game-title {
     text-align: center;
     font-family: var(--fuente-titulo);
     font-size: 4rem;
-    margin:-4rem 0 2rem 0;
+    margin:-8rem 0 2rem 0;
 }
 
 .game-image {
