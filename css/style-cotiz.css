@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(rgba(56, 56, 56, 0.315), rgba(56, 56, 56, 0.315)),
-    url("/css/img/PS5\ fondo4.jpg"), var(--gris-blanco) no-repeat fixed;
+    url("/img/PS5\ fondo4.jpg"), var(--gris-blanco) no-repeat fixed;
   background-size: cover;
   background-position: center;
   font-family: var(--fuente-texto);
