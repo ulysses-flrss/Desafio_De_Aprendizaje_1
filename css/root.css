@@ -163,29 +163,6 @@ header section .clicky-menu {
 	}
 }
 
-/* Estilos de Submenú */
-.clicky-menu ul{
-  position: absolute;
-  top: 100%;
-  left: 0;
-  visibility: hidden;
-}
 
-.clicky-menu.no-js li:hover > ul{
-  visibility: visible;
 
-}
-
-.clicky-menu.no-js li:focus-within > ul{
-  visibility: visible;
-}
-
-.clicky-menu ul[aria-hidden="false"]{
-  visibility: visible;
-}
-
-.clicky-menu .sub-menu--right{
-  left: auto !important;
-  right: 0 !important;
-}
 
