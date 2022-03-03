@@ -105,7 +105,7 @@ p{
 	padding-top:40vh;
 	overflow:hidden;
 	-webkit-backface-visibility: hidden;
-   -webkit-perspective:1000;
+   	-webkit-perspective:1000;
 	-webkit-transform: translate3d(0px,0px,0px);
 }
 
