@@ -1,0 +1,99 @@
+body {
+    background-color: var(--gris-blanco);
+}
+
+#header {
+    width: fit-content;
+    background-color: var(--azul-gris);
+    padding: 1.5rem;
+    margin: 2rem 0 ;
+
+}
+
+#title {
+    /* Ajustes de font */
+    font-family: var(--fuente-titulo);
+    font-size: 2.5rem;
+    color: #FFF;
+    text-shadow: 2px 2px 0px #000;
+}
+
+.game {
+    width: 70vw;
+    height: 75vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    border-radius: 10px;
+    background-color: var(--gris);
+}   
+
+
+button {
+    background-color: var(--azul-gris) !important; 
+    box-shadow: 0px 5px 0px var(--azul-oscuro);
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+}
+
+
+
+#right, #left {
+    text-decoration: none;
+    background-color: inherit;
+    border: none;
+    font-size: 3rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: 400ms all;
+}
+
+#right {
+    right: 100px;
+}
+
+#right:hover, #left:hover {
+    transition: 300ms all;
+    box-shadow: 0px 4px 0px var(--azul-oscuro);
+    transform: translateY(1px);
+}
+
+#right:active, #left:active {
+    transition: 75ms all;
+    box-shadow: 0px 2px 0px var(--azul-oscuro);
+    transform: translateY(4px);
+    /* transform: scale(0.95); */
+}
+
+.game-title {
+    text-align: center;
+    font-family: var(--fuente-titulo);
+    font-size: 4rem;
+    margin:-8rem 0 2rem 0;
+}
+
+.game-image {
+    width: 25vw;
+    height: auto;
+    margin: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-top:6px solid #0e4099;
+    border-bottom:6px solid #0e4099;
+    border-right:6px solid #0e4099; 
+    border-radius: 3px 10px 10px 5px;
+    transition: 1s all;
+}
+
+.game-description{
+    font-family: var(--fuente-texto);
+    font-size: 2rem;
+    text-align: center;
+    transition: 500ms all;
+}
+
+
+
+

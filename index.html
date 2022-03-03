@@ -4,11 +4,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/root.css">
+    <title>Playdom</title>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/principal.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+
+posicionarMenu();
+
+$(window).scroll(function() {    
+    posicionarMenu();
+});
+
+function posicionarMenu() {
+    var altura_del_header = $('.header').outerHeight(true);
+    var altura_del_menu = $('.menu').outerHeight(true);
+
+    if ($(window).scrollTop() >= altura_del_header){
+        $('.menu').addClass('fixed');
+        $('.wrapper').css('margin-top', (altura_del_menu) + 'px');
+    } else {
+        $('.menu').removeClass('fixed');
+        $('.wrapper').css('margin-top', '0');
+    }
+}
+
+</script>
+
+
 </head>
 <body>
+    <div class="header">
+        <section id="title">
+            <h1 ><center>Playdom</center></h1>
+        </section>
+
+    </div>
+   
+       
+        
+        <div class="menu">
+            <nav id="site-navigation" class="site-navigation" aria-label="Clickable Menu Demonstration">
+                <ul  class="main-menu clicky-menu no-js">
+                    <li >
+                        <a href="/index.html" >Inicio
+                            
+                        </a>
+                    </li>
+                    <li>
+                       <a href="sub-paginas/games.html">Juegos</a> 
+                    </li>
+                    <li>
+                        <a href="sub-paginas/specs.html">Especificaciones Tecnicas
+                            <svg aria-hidden="true" width="16" height="16" >
+                                <use xlink:href="#arrow" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sub-paginas/cotizacion.html">Cotización
+                            <svg aria-hidden="true" width="16" height="16">
+                                <use xlink:href="#arrow" />
+                            </svg>
+                        </a>
+                        <ul>
+                            <li><a href="#">x</a></li>
+                            <li><a href="#">x</a></li>
+                            <li><a href="#">x</a></li>
+                            <li><a href="#">x</a></li>
+                            <li><a href="#">x</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Comparación
+                            <svg aria-hidden="true" width="16" height="16">
+                                <use xlink:href="#arrow" />
+                            </svg>
+                        </a>
+                    </li>
+                    
+        
+                </ul>
+        
+            </nav>
+        </div>
+       
     
+        <div class="slider">
+			<ul>
+				<li>
+                   <img src="imgslide/play5.jpg" alt="Playstation 5">
+                 </li>
+				<li>
+                   <img src="imgslide/mando.jpg" alt="Nuevo mando de Playstation5">
+                </li>
+				<li>
+                    <img src="imgslide/juegos.jpg" alt="Juegos esperados">
+                </li>
+				<li>
+                   <img src="imgslide/juegos2.jpg" alt="Juegos confirmados">
+                </li>
+			</ul>
+		</div>
+    
+    <section class="bienvenida" id="title">
+        <div >Bienvenido</div>
+            <div>
+                <span>a Playdom</span>
+            </div>
+    </section>
+
+    
+    <p>¿Cuál fue su teoría más famosa de Einstein?
+        teoría de la relatividad especial
+        La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+        <p>¿Cuál fue su teoría más famosa de Einstein?
+            teoría de la relatividad especial
+            La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+            <p>¿Cuál fue su teoría más famosa de Einstein?
+                teoría de la relatividad especial
+                La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                <p>¿Cuál fue su teoría más famosa de Einstein?
+                    teoría de la relatividad especial
+                    La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                    <p>¿Cuál fue su teoría más famosa de Einstein?
+                        teoría de la relatividad especial
+                        La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                        <p>¿Cuál fue su teoría más famosa de Einstein?
+                            teoría de la relatividad especial
+                            La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+   
+                            <p>¿Cuál fue su teoría más famosa de Einstein?
+                                teoría de la relatividad especial
+                                La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                                <p>¿Cuál fue su teoría más famosa de Einstein?
+                                    teoría de la relatividad especial
+                                    La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                                    <p>¿Cuál fue su teoría más famosa de Einstein?
+                                        teoría de la relatividad especial
+                                        La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                                        <p>¿Cuál fue su teoría más famosa de Einstein?
+                                            teoría de la relatividad especial
+                                            La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                                            <p>¿Cuál fue su teoría más famosa de Einstein?
+                                                teoría de la relatividad especial
+                                                La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                                                <p>¿Cuál fue su teoría más famosa de Einstein?
+                                                    teoría de la relatividad especial
+                                                    La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                                                    <p>¿Cuál fue su teoría más famosa de Einstein?
+                                                        teoría de la relatividad especial
+                                                        La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                                                        <p>¿Cuál fue su teoría más famosa de Einstein?
+                                                            teoría de la relatividad especial
+                                                            La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                                                            <p>¿Cuál fue su teoría más famosa de Einstein?
+                                                                teoría de la relatividad especial
+                                                                La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                                                                <p>¿Cuál fue su teoría más famosa de Einstein?
+                                                                    teoría de la relatividad especial
+                                                                    La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                                                                    <p>¿Cuál fue su teoría más famosa de Einstein?
+                                                                        teoría de la relatividad especial
+                                                                        La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                                                                        <p>¿Cuál fue su teoría más famosa de Einstein?
+                                                                            teoría de la relatividad especial
+                                                                            La fórmula elaborada por Albert Einstein completó la teoría de la relatividad especial que el físico alemán postuló en 1905 y que sostiene, entre otras cosas, que el movimiento es relativo al observador, mientras la velocidad de la luz siempre es constante</p>
+                                                   
     
 </body>
 </html>
