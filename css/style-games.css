@@ -25,11 +25,11 @@ body {
     margin: auto;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 1rem 5rem;
     border-radius: 10px;
     background-color: var(--gris);
 }   
+
 
 button {
     background-color: var(--azul-gris) !important; 
@@ -47,7 +47,6 @@ button {
     border: none;
     font-size: 3rem;
     color: #FFF;
-    /* text-shadow: 2px 2px 2px #000; */
     cursor: pointer;
     transition: 400ms all;
 }
