@@ -8,7 +8,7 @@ let genero = document.getElementById("genero");
 
 let titulos = ["Battlefield 2042", "Far Cry 6", "Fifa 22", "Final Fantansy VII", "Gran Turismo", "Hitman 3", "Horizon Forbidden West", "Ratchet & Clank: Una Dimensión Aparte", "Spiderman: Miles Morales", "Tales Of Arise"];
 
-let imagenes = ["/img/battlefield_2042.jpeg", "/img/far_cry_6.jpeg", "/img/fifa_22.jpeg", "/img/final_fantasy.png", "/img/gran_turismo.jpeg", "/img/hitman_3.webp", "/img/horizon_forbidden_west.webp", "/img/ratchet_and_clank.jpeg", "/img/spiderman_miles.jpeg", "/img/tales_of_arise.jpeg"];
+let imagenes = ["../img/battlefield_2042.jpeg", "../img/far_cry_6.jpeg", "../img/fifa_22.jpeg", "../img/final_fantasy.png", "../img/gran_turismo.jpeg", "../img/hitman_3.webp", "../img/horizon_forbidden_west.webp", "../img/ratchet_and_clank.jpeg", "../img/spiderman_miles.jpeg", "../img/tales_of_arise.jpeg"];
 
 let lanzamientos = ["19/Noviembre/2021", "07/Octubre/2021", "01/Octubre/2021", "10/Junio/2021", "04/Marzo/2022", "20/Enero/2021", "18/Febrero/2022", "11/Junio/2021", "19/Noviembre/2020", "10/Septiembre/2021"],
 desarrolladores = ["DICE", "Ubisoft", "Electronics Arts", "Square Enix", "Polyphony Digital", "IO Interactive", "Guerrilla Games", "Insomniac Games", "Insomniac Games", "Bandai Namco Studios"],
