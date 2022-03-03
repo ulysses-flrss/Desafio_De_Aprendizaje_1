@@ -10,10 +10,6 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-/*form {
-  margin: 1.5rem auto;
-}*/
-
 header,
 .formulario,
 footer {
@@ -44,21 +40,23 @@ footer {
   margin: 2.5rem auto;
   padding: 1rem;
   border: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: var(--fuente-subtitulo);
 }
 
-#primerCampo {
+.opcForm:first-of-type {
   margin-top: 6rem;
 }
 
 input {
-  font-size: var(--funete-texto);
+  font-family: var(--fuente-texto);
   margin-top: 1.8rem;
+  padding: 1.5rem;
   width: 68.5%;
   height: 2.5rem;
   border: inset 0.3rem var(--azul-gris);
   border-radius: 1em;
+  font-size: 2rem;
 }
 
 fieldset:last-of-type input {
@@ -67,9 +65,9 @@ fieldset:last-of-type input {
 }
 
 #cantidad {
-  width: 20%;
+  min-width: 20%;
+  max-width: 25%;
   text-align: center;
-  font-size: 1.5rem;
 }
 
 .comprar {
@@ -80,9 +78,9 @@ fieldset:last-of-type input {
 #enviar {
   background: var(--azul-gris);
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  padding: 0.5rem;
+  padding: 1rem;
   border: outset white 0.2rem;
   border-radius: 1rem;
   margin-top: 1rem;
@@ -90,6 +88,76 @@ fieldset:last-of-type input {
   box-shadow: rgba(255, 0, 0, 1);
 }
 
+.textosFI,
+.factDescrip,
+.cobros {
+  align-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+}
+
+.textosFI > p {
+  font-family: var(--fuente-subtitulo);
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.factDescrip {
+  border: none;
+}
+
 .factura {
-  opacity: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.colum1,
+.cLeyenda {
+  font-weight: bold;
+}
+
+.colum1,
+.colum2 {
+  border: none;
+  padding: 1rem;
+  width: 50%;
+  margin: 1rem auto auto auto;
+  text-align: center;
+}
+
+.colum2 {
+  text-align: left;
+}
+
+.cobros,
+.factDescrip {
+  font-family: var(--fuente-texto);
+  font-size: 1.7rem;
+}
+
+.ley1,
+.ley2,
+.ley3 {
+  text-align: center;
+  display: flex;
+  margin: -1.5rem auto auto 13rem;
+  align-content: space-between;
+}
+
+.cMoneda {
+  margin-left: 4rem;
+}
+
+.ley2 {
+  margin: auto 12.6rem;
+}
+
+.ley3 {
+  margin: auto 10.3rem;
+}
+
+.ley2,
+.ley3 {
+  margin-top: 1.5rem;
 }

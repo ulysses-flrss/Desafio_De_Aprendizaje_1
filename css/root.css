@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Importación de fuentes */
 @import url("https://fonts.googleapis.com/css2?family=Karla&family=PT+Sans+Narrow&family=Montserrat:wght@900&family=Roboto+Condensed:wght@300&display=swap");
 
@@ -189,3 +190,29 @@ header section .clicky-menu {
   right: 0 !important;
 }
 
+=======
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=PT+Sans+Narrow&family=Montserrat:wght@900&family=Roboto+Condensed:wght@300&display=swap");
+
+:root {
+  font-size: 62.5%;
+  --fuente-titulo: "Montserrat", sans-serif;
+  --fuente-subtitulo: "PT Sans Narrow", sans-serif;
+  --fuente-texto: "Roboto Condensed", sans-serif;
+
+  --azul-oscuro: #14274e;
+  --azul-gris: #394867;
+  --gris: #9ba4b4;
+  --gris-blanco: #f1f6f9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.swal2-popup {
+  font-size: 1.6rem !important;
+  transition: 950ms;
+}
+>>>>>>> parent of d813c93 (Revert "Actualización Cotización")
