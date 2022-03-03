@@ -5,9 +5,16 @@ body {
 #header {
     width: fit-content;
     background-color: var(--azul-gris);
-    padding: 1.5rem;
+    padding: 1.5rem 3rem 1.5rem 0.5rem;
     margin: 2rem 0 ;
+    transform: translateX(-175px);
+    transition: 300ms all;
+    cursor: default;
+}
 
+#header:hover {
+    transition: 500ms all;
+    transform: translateX(0);
 }
 
 #title {
@@ -51,21 +58,16 @@ button {
     transition: 400ms all;
 }
 
-#right {
-    right: 100px;
-}
-
 #right:hover, #left:hover {
-    transition: 300ms all;
+    transition: 200ms all;
     box-shadow: 0px 4px 0px var(--azul-oscuro);
     transform: translateY(1px);
 }
 
 #right:active, #left:active {
     transition: 75ms all;
-    box-shadow: 0px 2px 0px var(--azul-oscuro);
-    transform: translateY(4px);
-    /* transform: scale(0.95); */
+    box-shadow: 0px 3px 0px var(--azul-oscuro);
+    transform: translateY(3px);
 }
 
 .game-title {
@@ -73,6 +75,7 @@ button {
     font-family: var(--fuente-titulo);
     font-size: 4rem;
     margin:-8rem 0 2rem 0;
+    text-shadow: 0px 0px 2px var(--azul-gris);
 }
 
 .game-image {
@@ -84,7 +87,7 @@ button {
     border-bottom:6px solid #0e4099;
     border-right:6px solid #0e4099; 
     border-radius: 3px 10px 10px 5px;
-    transition: 1s all;
+    transition: 500ms all;
 }
 
 .game-description{
