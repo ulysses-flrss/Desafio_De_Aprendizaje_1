@@ -99,21 +99,17 @@ p{
 
 
 .bienvenida #title{
-	
 	font-weight:300;
 	font-size:50px;
 	padding-top:40vh;
-	overflow:hidden;
 	-webkit-backface-visibility: hidden;
    -webkit-perspective:1000;
 	-webkit-transform: translate3d(0px,0px,0px);
 }
 
 .bienvenida div {
-	display:inline-block;
-	overflow:hidden;
 	white-space:nowrap;
-	margin-left: 50rem;
+	margin-left: 30rem;
 	
 }
 
@@ -131,6 +127,7 @@ p{
 
 .bienvenida div:last-of-type span{
 	margin-left: 0px;
+	
 	animation: slidein 7s infinite;
 }
 
