@@ -18,9 +18,9 @@
     <div class="formulario">
       <form action="" method="POST" id="formCotiz">
         <h1 id="tituloForm">Datos Para Comprar Una PS5</h1>
-        <fieldset class="opcForm">
-          <label for="nombre">Nombre Completo:</label>
-          <input type="text" name="nombre" id="nombre">
+        <fieldset class="opcForm" id="primerCampo">
+          <label for="name">Nombre Completo:</label>
+          <input type="text" name="name" id="name">
         </fieldset>
 
         <fieldset class="opcForm">
@@ -30,17 +30,31 @@
 
         <fieldset class="opcForm">
           <label for="cantidad">Cantidad a Comprar:</label>
-          <input type="number" name="cantidad" id="cantidad">
+          <input type="number" name="cantidad" id="cantidad" min="0" max="10">
         </fieldset>
+        <div class="comprar">
+          <button type="submit" id="enviar" name="enviar">Enviar</button>
+        </div>
       </form>
-      <div class="comprar">
-        <button id="enviar" onclick="crearFactura()">Enviar</button>
+    </div>
+
+    <div class="factura">
+      <div class="facturaOpc">
+        <h2 class="titleFact" id="title1"></h2>
+        <p class="leyenda" id="ley1"></p>
       </div>
+      <div class="facturaOpc">
+        <h2 class="titleFact" id="title2"></h2>
+        <p class="leyenda" id="ley2"></p>
+      </div>
+      <div class="facturaOpc">
+        <h2 class="titleFact" id="title3"></h2>
+        <p class="leyenda" id="ley3"></p>
+      </div>
+      <div class="facturOpc"><button type="submit" name="comprar">Comprar</button></div>
     </div>
   </main>
-  <script src="/js/factura.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="/js/sweetAlert.js"></script>
+  <script src="/js/facutra.js"></script>
 </body>
 
 </html>
