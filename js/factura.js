@@ -1,59 +1,68 @@
 const iva = 0.13;
 const precio = 900;
+const nombreV = /^[a-zA-ZÀ-ÿ\s]/;
+const correoV = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+const cantV = /^[0-9]/;
 
 function crearFactura() {
-  let nombre = document.getElementById("nombre").value;
-  let email = document.getElementById("correo").value;
-  let cantidad = document.getElementById("cantidad").value;
-  if (nombre == "") {
+  let nombre = document.getElementById("nombre");
+  let email = document.getElementById("correo");
+  let cantidad = document.getElementById("cantidad");
+
+  if (!nombreV.test(nombre.value)) {
     Swal.fire(
       'Error',
-      'El Campo de Nombre Está Vacío',
+      'Solo Puede Ingresar Letras Para el Nombre',
       'error'
-    )
-  }else if (email.length == 0) {
+    );
+  }else if (!correoV.test(email.value)) {
     Swal.fire(
       'Error',
-      'El Campo del Correo Electrónico Está Vacío',
+      'El Correo Electrónico Ingresado es Inválido.',
       'error'
-    )
-  }else if (cantidad<=0 || cantidad>10) {
+    );
+  }if (!cantV.test(cantidad.value)) {
     Swal.fire(
       'Error',
-      'Solo puede ingresar un número de 1 a 10',
+      'Solo Puede Comprar 1 consola como mínimo y 10 como máximo.',
       'error'
-    )
+    );
+  }else if (nombre.value == '' || nombre.value == ' ') {
+    Swal.fire(
+      'Error',
+      'No Puede Dejar El Nombre Vacío.',
+      'error'
+    );
+  }else if (email.value == '' || email.value ==' ') {
+    Swal.fire(
+      'Error',
+      'No Puede Dejar El Email Vacío.',
+      'error'
+    );
+  }else if (cantidad.value == '' || cantidad.value == ' ') {
+    Swal.fire(
+      'Error',
+      'No Puede Dejar La Cantidad Vacía.',
+      'error'
+    );
   }else{
-    let subtotal = precio*cantidad;
+    let subtotal = precio*cantidad.value;
     let totalIva = subtotal*iva;
     let total = subtotal+totalIva;
-    let factura = document.getElementById("factura");
-    let ver = document.getElementById("verFact");
 
-    /*Swal.fire({
-      title: 'FACTURA',
-      html:
-      '<div class="textosFI"><p>Gracias por su compra: <b>'+nombre+' </b>.</p></div> <div class="factDescrip"> <table class="fact"><tr class="filas"><td class="colum1">Producto:</td><td class="colum2">Play Station 5</td></tr> <tr class="filas"><td class="colum1">Cantidad:</td><td class="colum2">'+cantidad+'</td></tr><tr><td class="colum1">Precio:</td><td class="colum2">$599.00</td></tr></table></div> <div class="cobros"> <div id="ley1"><p class="cLeyenda">SubTotal</p> <p class="cMoneda">$'+subtotal+'</p></div> <div id="ley2"><p class="cLeyenda">IVA (13%)</p> <p class="cMoneda">$'+totalIva+'</p></div> <div id="ley3"><p class="cLeyenda">Total a Pagar</p> <p class="cMoneda">$'+total+'</p></div></div> <div class="textosFI"><p>Se enviará una confirmación al correo: <b>'+email+' </b></p>',
-      showCloseButton: true
-    });*/
+    factura.innerHTML = "<img src='/img/iconos/simboloX.png' alt='Cerrar Factura' id='closeFactura' onclick='cerrarFactura()'><div class='textosFI'><p>Gracias por su compra: <b>"+nombre.value+" </b>.</p></div> <div class='factDescrip'> <table class='fact'><tr class='filas'><td class='colum1'>Producto:</td><td class='colum2'>Play Station 5</td></tr> <tr class='filas'><td class='colum1'>Precio:</td><td class='colum2'>$"+precio+"</td></tr><tr><td class='colum1'>Cantidad:</td><td class='colum2'>"+cantidad.value+"</td></tr> <tr class='filas'><td class='colum1'>SubTotal</td> <td class='colum2'>$"+subtotal+"</td></tr> <tr><td class='colum1'>IVA (13%)</td> <td class='colum2'>$"+totalIva+"</td></tr> <tr><td class='colum1'>Total a Pagar</td> <td class='colum2'>$"+total+"</td></tr></div></table></div> <div class='textosFI'><p>Se enviará una confirmación al correo: <b>"+email.value+" </b></p>";
 
-    factura.innerHTML = "<img src='/img/iconos/simboloX.png' alt='Cerrar Factura' id='closeFactura' onclick='cerrarFactura()'><div class='textosFI'><p>Gracias por su compra: <b>"+nombre+" </b>.</p></div> <div class='factDescrip'> <table class='fact'><tr class='filas'><td class='colum1'>Producto:</td><td class='colum2'>Play Station 5</td></tr> <tr class='filas'><td class='colum1'>Precio:</td><td class='colum2'>$"+precio+"</td></tr><tr><td class='colum1'>Cantidad:</td><td class='colum2'>"+cantidad+"</td></tr> <tr class='filas'><td class='colum1'>SubTotal</td> <td class='colum2'>$"+subtotal+"</td></tr> <tr><td class='colum1'>IVA (13%)</td> <td class='colum2'>$"+totalIva+"</td></tr> <tr><td class='colum1'>Total a Pagar</td> <td class='colum2'>$"+total+"</td></tr></div></table></div> <div class='textosFI'><p>Se enviará una confirmación al correo: <b>"+email+" </b></p>";
-
-    ver.style.opacity = '1';
+    /*ver.style.opacity = '1';*/
     factura.style.opacity = '1';
     factura.style.transform = 'translateY(-10rem)';
     factura.style.zIndex = '2';
-  }
-}
 
-function validacion(nombre, email, cantidad) {
-  let pNombre = false;
-  RegExp = a;
-  if (nombre == '' || nombre == ' ') {
-    return pNombre;
-  }else{
-    pNombre = true;
-    return pNombre;
+    let boton = document.getElementById('botonFact');
+
+    boton.innerHTML = "<button id='verFact' onclick='verFactura()'>Ver Factura</button>"
+    nombre.disabled = true;
+    email.disabled = true;
+    cantidad.disabled = true;
   }
 }
 
@@ -62,4 +71,11 @@ function cerrarFactura() {
   factura.style.opacity = 0;
   factura.style.transform = 'translateY(10rem)';
   factura.style.zIndex = '-1';
+}
+
+function verFactura() {
+  let factura = document.getElementById("factura");
+  factura.style.opacity = 1;
+  factura.style.transform = 'translateY(-10rem)';
+  factura.style.zIndex = '2';
 }
