@@ -15,6 +15,7 @@
   --azul-gris: #394867;
   --gris: #9ba4b4;
   --gris-blanco: #f1f6f9;
+
 }
 
 * {
@@ -22,6 +23,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 
 /* Estilos del menu */
 
