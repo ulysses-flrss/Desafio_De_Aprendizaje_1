@@ -22,8 +22,7 @@ footer {
   width: 48rem;
   height: 35rem;
   padding: 1.5rem 2rem;
-  margin: 10rem auto;
-  /*border: outset var(--azul-oscro) 1rem;*/
+  margin: auto;
   border-radius: 1em;
   align-items: center;
 }
@@ -109,7 +108,7 @@ fieldset:last-of-type input {
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 50rem;
+  width: 40rem;
   height: 45rem;
   padding-top: 2.5rem;
   transition: all 0.9s;
@@ -160,4 +159,13 @@ fieldset:last-of-type input {
 .factDescrip {
   font-family: var(--fuente-texto);
   font-size: 1.7rem;
+}
+
+#closeFactura {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  margin-top: -1.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
 }

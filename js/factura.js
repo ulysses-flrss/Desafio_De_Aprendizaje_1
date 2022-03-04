@@ -11,7 +11,7 @@ function crearFactura() {
       'El Campo de Nombre Está Vacío',
       'error'
     )
-  }else if (email == "") {
+  }else if (email.length == 0) {
     Swal.fire(
       'Error',
       'El Campo del Correo Electrónico Está Vacío',
@@ -37,18 +37,27 @@ function crearFactura() {
       showCloseButton: true
     });*/
 
-    factura.innerHTML = "<div class='textosFI'><p>Gracias por su compra: <b>"+nombre+" </b>.</p></div> <div class='factDescrip'> <table class='fact'><tr class='filas'><td class='colum1'>Producto:</td><td class='colum2'>Play Station 5</td></tr> <tr class='filas'><td class='colum1'>Precio:</td><td class='colum2'>$"+precio+"</td></tr><tr><td class='colum1'>Cantidad:</td><td class='colum2'>"+cantidad+"</td></tr> <tr class='filas'><td class='colum1'>SubTotal</td> <td class='colum2'>$"+subtotal+"</td></tr> <tr><td class='colum1'>IVA (13%)</td> <td class='colum2'>$"+totalIva+"</td></tr> <tr><td class='colum1'>Total a Pagar</td> <td class='colum2'>$"+total+"</td></tr></div></table></div> <div class='textosFI'><p>Se enviará una confirmación al correo: <b>"+email+" </b></p>";
+    factura.innerHTML = "<img src='/img/iconos/simboloX.png' alt='Cerrar Factura' id='closeFactura' onclick='cerrarFactura()'><div class='textosFI'><p>Gracias por su compra: <b>"+nombre+" </b>.</p></div> <div class='factDescrip'> <table class='fact'><tr class='filas'><td class='colum1'>Producto:</td><td class='colum2'>Play Station 5</td></tr> <tr class='filas'><td class='colum1'>Precio:</td><td class='colum2'>$"+precio+"</td></tr><tr><td class='colum1'>Cantidad:</td><td class='colum2'>"+cantidad+"</td></tr> <tr class='filas'><td class='colum1'>SubTotal</td> <td class='colum2'>$"+subtotal+"</td></tr> <tr><td class='colum1'>IVA (13%)</td> <td class='colum2'>$"+totalIva+"</td></tr> <tr><td class='colum1'>Total a Pagar</td> <td class='colum2'>$"+total+"</td></tr></div></table></div> <div class='textosFI'><p>Se enviará una confirmación al correo: <b>"+email+" </b></p>";
 
     ver.style.opacity = '1';
     factura.style.opacity = '1';
     factura.style.transform = 'translateY(-10rem)';
     factura.style.zIndex = '2';
   }
-  //enviar.addEventListener("click",crearVariables);
+}
 
-  /*function crearVariables(){
-    let nombre = document.getElementById("nombre");
-    let email = document.getElementById("email");
-    let cantidad = document.getElementById("cantidad");
-  }*/
+function validacion(nombre, email, cantidad) {
+  let pNombre = false;
+  RegExp = a;
+  if (nombre == '' || nombre == ' ') {
+    return pNombre;
+  }else{
+    pNombre = true;
+    return pNombre;
+  }
+}
+
+function cerrarFactura() {
+  let factura = document.getElementById("factura");
+  factura.style.opacity = 0;
 }
