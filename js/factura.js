@@ -60,4 +60,6 @@ function validacion(nombre, email, cantidad) {
 function cerrarFactura() {
   let factura = document.getElementById("factura");
   factura.style.opacity = 0;
+  factura.style.transform = 'translateY(10rem)';
+  factura.style.zIndex = '-1';
 }
