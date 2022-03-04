@@ -141,13 +141,7 @@ p{
 	.anuncio {
        grid-template-columns: 1fr 1fr;
 		}  
-	.item-1 {
-	   grid-column: 1/ span 2;
-			}
-	.item-1 h1 {
-	  font-size: 30px;
-		}
-	 }
+	}
 		  
 @media only screen and (min-width: 850px) {
 	.anuncio {
@@ -201,6 +195,11 @@ p{
 	font-size: 20px;
 	margin: 0;
 	color: #333;
+	font-family: var(--fuente-texto);
+	transition: all .1s ease-in;
+ }
+ .anuncio h1:hover{
+	 color: #999;
  }
 		  
 .imagen-anuncio span {
@@ -210,6 +209,7 @@ p{
 	text-transform: uppercase;
 	letter-spacing: .05em;
 	margin: 3em 0 0 0;
+	font-family: var(--fuente-texto);
 }
 
 footer{
@@ -217,6 +217,7 @@ footer{
 	padding: 5vh 0;
 	text-align: center;
 	position: relative;
+	font-size: 3rem;
+	font-family: var(--fuente-subtitulo);
 }
-
-	
+ 
