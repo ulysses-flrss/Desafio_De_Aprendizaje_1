@@ -75,7 +75,8 @@ fieldset:last-of-type input {
   box-shadow: rgba(0, 0, 0, 1);
 }
 
-#enviar {
+#enviar,
+#verFact {
   background: var(--azul-gris);
   color: white;
   font-size: 1.8rem;
@@ -86,6 +87,32 @@ fieldset:last-of-type input {
   margin-top: 1rem;
   cursor: pointer;
   box-shadow: rgba(255, 0, 0, 1);
+}
+
+#verFact {
+  opacity: 0;
+  position: absolute;
+  margin: -4.6rem 40rem;
+  width: 13rem;
+  transition: all 0.9s;
+}
+
+#factura {
+  opacity: 0;
+  background: whitesmoke;
+  color: black;
+  border-radius: 0.5rem;
+  position: absolute;
+  z-index: -1;
+  top: 20rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50rem;
+  height: 45rem;
+  padding-top: 2.5rem;
+  transition: all 0.9s;
 }
 
 .textosFI,
@@ -107,7 +134,7 @@ fieldset:last-of-type input {
   border: none;
 }
 
-.factura {
+.fact {
   text-align: center;
   margin: auto;
 }
@@ -130,34 +157,7 @@ fieldset:last-of-type input {
   text-align: left;
 }
 
-.cobros,
 .factDescrip {
   font-family: var(--fuente-texto);
   font-size: 1.7rem;
-}
-
-.ley1,
-.ley2,
-.ley3 {
-  text-align: center;
-  display: flex;
-  margin: -1.5rem auto auto 13rem;
-  align-content: space-between;
-}
-
-.cMoneda {
-  margin-left: 4rem;
-}
-
-.ley2 {
-  margin: auto 12.6rem;
-}
-
-.ley3 {
-  margin: auto 10.3rem;
-}
-
-.ley2,
-.ley3 {
-  margin-top: 1.5rem;
 }
