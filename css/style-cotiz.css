@@ -31,7 +31,7 @@ footer {
   width: 48rem;
   height: 55rem;
   padding: 1.5rem 2rem;
-  margin: 1.5rem auto;
+  margin: 3.5rem auto 1.5rem auto;
   border-radius: 1em;
   align-items: center;
   color: white;
@@ -109,19 +109,22 @@ fieldset:last-of-type input {
   transition: 200ms all;
 }
 
-#enviar:hover, #verFact:hover {
+#enviar:hover,
+#verFact:hover {
   transform: scale(1.15);
   transition: 200ms all;
   box-shadow: 0 0 10px white;
 }
 
-#enviar:active, #verFact:active {
+#enviar:active,
+#verFact:active {
   transition: 50ms all;
   transform: scale(0.9);
   box-shadow: 0 0 2px white;
 }
 
-#enviar:focus, #verFact:focus {
+#enviar:focus,
+#verFact:focus {
   outline: 3px solid var(--azul-oscuro);
   box-shadow: 0px 5px 0px var(--azul-oscuro);
 }
@@ -203,7 +206,6 @@ fieldset:last-of-type input {
   margin-left: 1rem;
   cursor: pointer;
 }
-
 
 footer {
   position: absolute;
