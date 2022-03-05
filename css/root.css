@@ -28,10 +28,10 @@
   border-top: 1px solid white;
   background: white;
   color: #333;
-  height: 150px;
+  height: 120px;
   width: 100%;
   font-family: "Lobster", cursive;
-  text-align: center;
+  
 }
 .menu {
   z-index: 100;
