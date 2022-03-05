@@ -7,6 +7,9 @@ body{
     background-color: var(--gris-blanco) ;
     margin: 0;
 }
+.header{
+	
+}
 
 #title{
     font-family: var(--fuente-titulo);
