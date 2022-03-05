@@ -41,12 +41,12 @@ if(menuSub) {
 menuSub.innerHTML = `<nav id="site-navigation" class="site-navigation" aria-label="Clickable Menu Demonstration">
 <ul  class="main-menu clicky-menu no-js">
     <li >
-        <a href="/index.html" >Inicio
+        <a href="../index.html" >Inicio
             
         </a>
     </li>
     <li>
-        <a href="games.html">Juegos</a> 
+        <a href="../sub-paginas/games.html">Juegos</a> 
     </li>
     <li>
         <a href="../sub-paginas/specs.html">Especificaciones Tecnicas
