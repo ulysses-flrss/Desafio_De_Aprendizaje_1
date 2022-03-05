@@ -178,13 +178,3 @@ header section .clicky-menu {
   font-size: 1.3rem !important;
 }
 
-footer{
-  position: absolute;
-	background: #dddee1;
-	padding: 5vh 0;
-  margin-top: 25rem;
-	text-align: center;
-	position: relative;
-	font-size: 3rem;
-	font-family: var(--fuente-subtitulo);
-}
