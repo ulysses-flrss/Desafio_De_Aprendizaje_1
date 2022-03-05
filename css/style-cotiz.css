@@ -98,16 +98,27 @@ fieldset:last-of-type input {
 
 #enviar,
 #verFact {
-  background: var(--azul-gris);
-  color: white;
   font-size: 1.8rem;
   font-weight: bold;
   padding: 1rem;
-  border: outset white 0.2rem;
-  border-radius: 1rem;
+  border: solid white 0.2rem;
+  border-radius: 5px;
   margin-top: 1rem;
   cursor: pointer;
   box-shadow: rgba(255, 0, 0, 1);
+  transition: 200ms all;
+}
+
+#enviar:hover, #verFact:hover {
+  transform: scale(1.15);
+  transition: 200ms all;
+  box-shadow: 0 0 10px white;
+}
+
+#enviar:active, #verFact:active {
+  transition: 50ms all;
+  transform: scale(0.9);
+  box-shadow: 0 0 2px white;
 }
 
 #verFact {
