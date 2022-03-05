@@ -5,11 +5,15 @@ body {
 }
 
 .textoIni {
-  background: var(--azul-gris);
+  background: var(--azul-oscuro);
   color: white;
   width: 80%;
-  margin: 3rem auto 5rem auto;
+  font-family: var(--fuente-subtitulo);
+  margin: 5rem auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px var(--azul-oscuro);
   padding: 1.5rem;
+  font-size: 2rem;
 }
 
 p {
