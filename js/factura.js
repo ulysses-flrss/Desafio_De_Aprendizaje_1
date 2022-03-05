@@ -39,7 +39,7 @@ function crearFactura() {
       'No Puede Dejar La Cantidad Vacía.',
       'error'
     );
-  }else if (!cantV.test(cantidad.value)) {
+  }else if (!Number(cantidad.value)) {
     Swal.fire(
       'Error',
       'Solo Puede Ingresar Números.',
@@ -56,7 +56,7 @@ function crearFactura() {
     let totalIva = subtotal*iva;
     let total = subtotal+totalIva;
 
-    factura.innerHTML = "<img src='/img/iconos/simboloX.png' alt='Cerrar Factura' id='closeFactura' onclick='cerrarFactura()'><div class='textosFI'><p>Gracias por su compra: <b>"+nombre.value+" </b>.</p></div> <div class='factDescrip'> <table class='fact'><tr class='filas'><td class='colum1'>Producto:</td><td class='colum2'>Play Station 5</td></tr> <tr class='filas'><td class='colum1'>Precio:</td><td class='colum2'>$"+precio+"</td></tr><tr><td class='colum1'>Cantidad:</td><td class='colum2'>"+cantidad.value+"</td></tr> <tr class='filas'><td class='colum1'>SubTotal</td> <td class='colum2'>$"+subtotal+"</td></tr> <tr><td class='colum1'>IVA (13%)</td> <td class='colum2'>$"+totalIva+"</td></tr> <tr><td class='colum1'>Total a Pagar</td> <td class='colum2'>$"+total+"</td></tr></div></table></div> <div class='textosFI'><p>Se enviará una confirmación al correo: <b>"+email.value+" </b></p>";
+    factura.innerHTML = "<img src='../img/iconos/simboloX.png' alt='Cerrar Factura' id='closeFactura' onclick='cerrarFactura()'><div class='textosFI'><p>Gracias por su compra: <b>"+nombre.value+" </b>.</p></div> <div class='factDescrip'> <table class='fact'><tr class='filas'><td class='colum1'>Producto:</td><td class='colum2'>Play Station 5</td></tr> <tr class='filas'><td class='colum1'>Precio:</td><td class='colum2'>$"+precio+"</td></tr><tr><td class='colum1'>Cantidad:</td><td class='colum2'>"+cantidad.value+"</td></tr> <tr class='filas'><td class='colum1'>SubTotal</td> <td class='colum2'>$"+subtotal+"</td></tr> <tr><td class='colum1'>IVA (13%)</td> <td class='colum2'>$"+totalIva+"</td></tr> <tr><td class='colum1'>Total a Pagar</td> <td class='colum2'>$"+total+"</td></tr></div></table></div> <div class='textosFI'><p>Se enviará una confirmación al correo: <b>"+email.value+" </b></p>";
 
     /*ver.style.opacity = '1';*/
     factura.style.opacity = '1';
