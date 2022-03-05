@@ -121,6 +121,11 @@ fieldset:last-of-type input {
   box-shadow: 0 0 2px white;
 }
 
+#enviar:focus, #verFact:focus {
+  outline: 3px solid var(--azul-oscuro);
+  box-shadow: 0px 5px 0px var(--azul-oscuro);
+}
+
 #verFact {
   transition: all 0.9s;
 }
