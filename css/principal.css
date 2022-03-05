@@ -79,7 +79,7 @@ p{
 
 .bienvenida div {
 	white-space:nowrap;
-	margin-left: 30rem;
+	margin: 5rem 35rem;
 	
 }
 
@@ -194,14 +194,19 @@ p{
 .anuncio h1 {
 	font-size: 20px;
 	margin: 0;
-	color: #333;
+	color: #999;
 	font-family: var(--fuente-texto);
-	transition: all .1s ease-in;
+	transition: all 300ms ease-in;
  }
- .anuncio h1:hover{
-	 color: #999;
- }
-		  
+ .anuncio :hover h1{
+	 color: #333;
+	 transition: 200ms all;
+}
+
+.item {
+	transition: 200ms all;
+}
+
 .imagen-anuncio span {
 	font-size: 12px;
 	font-weight: bold;
@@ -212,12 +217,5 @@ p{
 	font-family: var(--fuente-texto);
 }
 
-footer{
-	background: #dddee1;
-	padding: 5vh 0;
-	text-align: center;
-	position: relative;
-	font-size: 3rem;
-	font-family: var(--fuente-subtitulo);
-}
+	
  

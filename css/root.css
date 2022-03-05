@@ -34,6 +34,7 @@
   text-align: center;
 }
 .menu {
+  z-index: 100;
   width: 100%;
   background-color: var(--azul-oscuro);
   color: white;
@@ -84,11 +85,13 @@ header section .clicky-menu {
   font-family: var(--fuente-titulo);
   border-radius: 3px;
   font-size: 2rem;
+  transition: 200ms all;
 }
 
 .clicky-menu a:hover,
 .clicky-menu button:hover {
-  background: #000;
+  background: #0d1b36;
+  transition: 200ms all;
 }
 
 .clicky-menu a:focus,
@@ -173,4 +176,15 @@ header section .clicky-menu {
 /*Estilo alertas*/
 .swal2-popup {
   font-size: 1.3rem !important;
+}
+
+footer{
+  position: absolute;
+	background: #dddee1;
+	padding: 5vh 0;
+  margin-top: 25rem;
+	text-align: center;
+	position: relative;
+	font-size: 3rem;
+	font-family: var(--fuente-subtitulo);
 }
