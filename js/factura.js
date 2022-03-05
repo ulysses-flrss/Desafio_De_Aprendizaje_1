@@ -1,5 +1,5 @@
 const iva = 0.13;
-const precio = 900;
+const precio = 999;
 const nombreV = /^[a-zA-ZÀ-ÿ\s]/;
 const correoV = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 const cantV = /^[0-9]/;
