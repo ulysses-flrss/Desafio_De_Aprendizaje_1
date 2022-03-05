@@ -97,6 +97,17 @@ button {
     transition: 500ms all;
 }
 
+footer{
+	position: absolute;
+	background: #dddee1;
+	padding: 5vh 0;
+	margin-top: 10rem;
+	text-align: center;
+	position: relative;
+	font-size: 3rem;
+	font-family: var(--fuente-subtitulo);
+  }
+
 
 
 
