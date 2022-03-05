@@ -27,7 +27,7 @@ menu.innerHTML = `<nav id="site-navigation" class="site-navigation" aria-label="
           
         </li>
         <li>
-            <a href="#">Comparación
+            <a href="sub-paginas/comparacion.html">Comparación
                 <svg aria-hidden="true" width="16" height="16">
                     <use xlink:href="#arrow" />
                 </svg>
@@ -64,7 +64,7 @@ menuSub.innerHTML = `<nav id="site-navigation" class="site-navigation" aria-labe
        
     </li>
     <li>
-        <a href="#">Comparación
+        <a href="../sub-paginas/comparacion.html">Comparación
             <svg aria-hidden="true" width="16" height="16">
                 <use xlink:href="#arrow" />
             </svg>
