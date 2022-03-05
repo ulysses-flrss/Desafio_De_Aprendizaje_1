@@ -9,25 +9,7 @@ function crearFactura() {
   let email = document.getElementById("correo");
   let cantidad = document.getElementById("cantidad");
 
-  if (!nombreV.test(nombre.value)) {
-    Swal.fire(
-      'Error',
-      'Solo Puede Ingresar Letras Para el Nombre',
-      'error'
-    );
-  }else if (!correoV.test(email.value)) {
-    Swal.fire(
-      'Error',
-      'El Correo Electrónico Ingresado es Inválido.',
-      'error'
-    );
-  }if (!cantV.test(cantidad.value)) {
-    Swal.fire(
-      'Error',
-      'Solo Puede Comprar 1 consola como mínimo y 10 como máximo.',
-      'error'
-    );
-  }else if (nombre.value == '' || nombre.value == ' ') {
+  if (nombre.value == '' || nombre.value == ' ') {
     Swal.fire(
       'Error',
       'No Puede Dejar El Nombre Vacío.',
@@ -43,6 +25,24 @@ function crearFactura() {
     Swal.fire(
       'Error',
       'No Puede Dejar La Cantidad Vacía.',
+      'error'
+    );
+  }else if (!nombreV.test(nombre.value)) {
+    Swal.fire(
+      'Error',
+      'Solo Puede Ingresar Letras Para el Nombre',
+      'error'
+    );
+  }else if (!correoV.test(email.value)) {
+    Swal.fire(
+      'Error',
+      'El Correo Electrónico Ingresado es Inválido.',
+      'error'
+    );
+  }else if (!cantV.test(cantidad.value)) {
+    Swal.fire(
+      'Error',
+      'Solo Puede Comprar 1 consola como mínimo y 10 como máximo.',
       'error'
     );
   }else{
