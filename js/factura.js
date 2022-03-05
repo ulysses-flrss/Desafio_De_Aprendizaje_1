@@ -15,22 +15,16 @@ function crearFactura() {
       'No Puede Dejar El Nombre Vacío.',
       'error'
     );
-  }else if (email.value == '' || email.value ==' ') {
-    Swal.fire(
-      'Error',
-      'No Puede Dejar El Email Vacío.',
-      'error'
-    );
-  }else if (cantidad.value == '' || cantidad.value == ' ') {
-    Swal.fire(
-      'Error',
-      'No Puede Dejar La Cantidad Vacía.',
-      'error'
-    );
   }else if (!nombreV.test(nombre.value)) {
     Swal.fire(
       'Error',
       'Solo Puede Ingresar Letras Para el Nombre',
+      'error'
+    );
+  }else if (email.value == '' || email.value ==' ') {
+    Swal.fire(
+      'Error',
+      'No Puede Dejar El Email Vacío.',
       'error'
     );
   }else if (!correoV.test(email.value)) {
@@ -39,7 +33,19 @@ function crearFactura() {
       'El Correo Electrónico Ingresado es Inválido.',
       'error'
     );
+  }else if (cantidad.value == '' || cantidad.value == ' ') {
+    Swal.fire(
+      'Error',
+      'No Puede Dejar La Cantidad Vacía.',
+      'error'
+    );
   }else if (!cantV.test(cantidad.value)) {
+    Swal.fire(
+      'Error',
+      'Solo Puede Ingresar Números.',
+      'error'
+    );
+  } else if (cantidad.value < 1 || cantidad.value > 10) {
     Swal.fire(
       'Error',
       'Solo Puede Comprar 1 consola como mínimo y 10 como máximo.',
